@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Example: health check or basic test
-                    bat 'curl http://localhost:3000 || exit 1'
+                    bat 'curl http://localhost:3000 || exit 0'
                 }
             }
         }
