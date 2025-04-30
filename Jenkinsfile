@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Git Clone') {
             steps {
-                bat 'git clone https://github.com/Shivansh1711/E-commerce-web.git .'
+                bat 'git clone https://github.com/Shivansh1711/E-sommerce-docker.git .'
             }
         }
         stage('Clear previous Builds') {
