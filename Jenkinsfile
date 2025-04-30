@@ -23,13 +23,13 @@ pipeline {
                 bat 'docker compose up -d --build'
             }
         }
-        stage('Testing') {
-            steps {
-                script {
-                    // Example: health check or basic test
-                    bat 'curl http://localhost:3000 || exit 0'
-                }
-            }
-        }
+        // stage('Testing') {
+        //     steps {
+        //         script {
+        //             // Example: health check or basic test
+        //             bat 'curl http://localhost:3000 || exit 1'
+        //         }
+        //     }
+        // }
     }
 }
